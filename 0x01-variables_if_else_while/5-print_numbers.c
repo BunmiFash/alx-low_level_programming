@@ -13,5 +13,8 @@ int main(void)
 	{
 		printf("%d", digit);
 	}
+	{
+		putchar('\n');
+	}
 	return (0);
 }
