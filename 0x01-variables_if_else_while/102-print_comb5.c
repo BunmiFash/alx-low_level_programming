@@ -28,7 +28,7 @@ int main(void)
 					putchar(third);
 					putchar(fourth);
 
-					if (!((first == '9' && second == '8') && (third == '8' && fourth == '9')))
+					if (!((first == '9' && second == '8') && (third == '9' && fourth == '9')))
 					{
 						putchar(',');
 						putchar(' ');
