@@ -6,10 +6,39 @@
 
 void times_table(void)
 {
-	int n = 0;
+	int row, column, multiply;
 
-	while (n <= 12)
+	row = 0;
+
+	while (row <= 9)
 	{
-		_putchar('0' +(9 * n));
+		column = 0;
+
+		while (column <= 9)
+		{
+			multiply = row * column;
+			if (column == 0)
+			{
+				_putchar('0' + multiply);
+			}
+			else if (multiply <= 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + multiply);
+			}
+			else if (multiply > 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar('0' + (multiply / 10));
+				_putchar('0' + (multiply % 10));
+			}
+
+			column++;
+		}
+		row++;
+		_putchar('\n');
 	}
 }
