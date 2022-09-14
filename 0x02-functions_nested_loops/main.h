@@ -28,5 +28,7 @@ void print_times_table(int n);
 
 int multiple (void);
 
+int fibonacci(void);
+
 
 #endif
