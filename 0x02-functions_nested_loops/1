@@ -14,14 +14,14 @@ int main(void)
 	{
 		add = x + y;
 		printf("%lu, ", add);
-		x = y;
-		y = add;
+		x = y;y = add;
 		count++;
 	}
 	x_half = x / 10000000000;
 	y_half = y / 10000000000;
 	x_half2 = x % 10000000000;
 	y_half2 = y % 10000000000;
+
 	count = 93;
 
 	while (count < 99)
