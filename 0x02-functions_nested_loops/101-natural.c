@@ -19,4 +19,5 @@ int multiple(void)
 		}
 		n++;
 	}
+	return (0);
 }
