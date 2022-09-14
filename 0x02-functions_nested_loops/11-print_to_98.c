@@ -11,7 +11,7 @@ void print_to_98(int n)
 	{
 		while (n <= 98)
 		{
-			return;
+			_putchar(n);
 		}
 		n++;
 	}
@@ -19,7 +19,7 @@ void print_to_98(int n)
 	{
 		while (n <= 98)
 		{
-			return;
+			_putchar(n);
 		}
 		n++;
 	}
@@ -27,7 +27,7 @@ void print_to_98(int n)
 	{
 		while (n >= 98)
 		{
-			return;
+			_putchar(n);
 		}
 		n--;
 	}
