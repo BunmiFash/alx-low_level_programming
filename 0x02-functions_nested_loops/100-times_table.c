@@ -7,22 +7,16 @@
 
 void print_times_table(int n)
 {
-	int row;
-	int column;
-	int multiply;
+	int row, column, multiply;
 
 	if (n >= 0 && n <= 15)
-	{
-		row = 0;
+	{row = 0;
 		while (row <= n)
-		{
-			column = 0;
+		{column = 0;
 			while (column <= n)
-			{
-				multiply = row * column;
+			{multiply = row * column;
 				if (column == 0)
-				{
-					_putchar('0' + multiply);
+				{_putchar('0' + multiply);
 				}
 				else
 				{
