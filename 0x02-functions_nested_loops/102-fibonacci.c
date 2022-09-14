@@ -6,21 +6,21 @@
 
 int main(void)
 {
-	int n = 1;
-	int m = 2;
+	long int n = 1;
+	long int m = 2;
 	int count = 1;
 	int end = 50;
 
 	while (count <= (end / 2))
 	{
-		printf("%d, %d, ", n, m);
+		printf("%li, %li ", n, m);
 		n += m;
 		m += n;
 		count++;
 	}
 	if (end % 2 == 1)
 	{
-		printf("%d", n);
+		printf("%li", m);
 	}
 	printf("\n");
 	return (0);
