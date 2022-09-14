@@ -13,7 +13,7 @@ int main(void)
 
 	while (count <= (end / 2))
 	{
-		printf("%li, %li ", n, m);
+		printf("%li, %li, ", n, m);
 		n += m;
 		m += n;
 		count++;
