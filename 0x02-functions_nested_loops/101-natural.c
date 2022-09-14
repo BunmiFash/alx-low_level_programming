@@ -1,11 +1,10 @@
-#include "main.h"
 #include <stdio.h>
 /**
- * multiple - Prints the sum of all multiples of 3 or 5;
+ * main - Prints the sum of all multiples of 3 or 5;
  * Return: Always 0 (Success)
  */
 
-int multiple(void)
+int main(void)
 {
 	int n = 0;
 	int sum = 0;
