@@ -2,4 +2,7 @@
 #define MAIN_H
 int putchar(int);
 
+void print_alphabet(void);
+
+
 #endif
