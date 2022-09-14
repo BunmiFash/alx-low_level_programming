@@ -6,22 +6,26 @@
 
 int main(void)
 {
-	long int n = 1;
-	long int m = 2;
-	int count = 1;
-	int end = 50;
+	unsigned long int n = 0;
+	unsigned long int m = 1;
+	int add;
+	int count = 0;
 
-	while (count <= (end / 2))
+	while (count < 50)
 	{
-		printf("%li, %li, ", n, m);
-		n += m;
-		m += n;
+		add = n + m;
+		printf("%u", add);
+		n = m;
+		m = add;
+		if (count == 49)
+		{
+			printf("\n");
+		}
+		else
+		{
+			printf(", ");
+		}
 		count++;
 	}
-	if (end % 2 == 1)
-	{
-		printf("%li", m);
-	}
-	printf("\n");
 	return (0);
 }
