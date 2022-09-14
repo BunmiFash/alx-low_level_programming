@@ -8,13 +8,13 @@ int main(void)
 {
 	unsigned long int n = 0;
 	unsigned long int m = 1;
-	int add;
+	unsigned long int add;
 	int count = 0;
 
 	while (count < 50)
 	{
 		add = n + m;
-		printf("%u", add);
+		printf("%lu", add);
 		n = m;
 		m = add;
 		if (count == 49)
