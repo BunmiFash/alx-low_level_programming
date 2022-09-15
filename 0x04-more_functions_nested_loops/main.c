@@ -10,9 +10,15 @@
 
 int main(void)
 {
-	char c = 'w';
+	/**
+	*char c = 'w';
+	*/
+	int num = 9;
+/**
+	*printf("%c: %d\n", c, _isupper(c));
+	*/
 
-	printf("%c: %d\n", c, _isupper(c));
+	printf("%d: %d\n", num, _isdigit(num));
 
 	return (0);
 }
