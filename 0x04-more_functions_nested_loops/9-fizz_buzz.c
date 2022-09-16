@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
 * main - Fizzbuzz
 * Return: Always 0 (Success)
