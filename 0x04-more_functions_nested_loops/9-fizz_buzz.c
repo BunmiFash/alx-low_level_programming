@@ -32,7 +32,7 @@ void fizz_buzz(void)
 			printf(" ");
 		}
 	}
-	_putchar('\n');
+	printf("\n");
 
 }
 
