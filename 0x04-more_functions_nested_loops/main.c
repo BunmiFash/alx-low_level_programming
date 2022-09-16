@@ -13,7 +13,7 @@ int main(void)
 	/**
 	*char c = 'w';
 	*/
-	int num = 9;
+	int num = 3;
 /**
 	*printf("%c: %d\n", c, _isupper(c));
 	*/
