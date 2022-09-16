@@ -1,11 +1,10 @@
-#include <stdio.h>
 #include "main.h"
 /**
-* fizz_buzz - Fizzbuzz
-* Return: void
+* main - Fizzbuzz
+* Return: Always 0 (Success)
 */
 
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
@@ -33,6 +32,7 @@ void fizz_buzz(void)
 		}
 	}
 	printf("\n");
+	return (0);
 
 }
 
