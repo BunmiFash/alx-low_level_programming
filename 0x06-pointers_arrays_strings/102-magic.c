@@ -1,11 +1,6 @@
 #include <stdio.h>
 
-/**
-* main - prints a[2] = 98
-* Return: Always 0 (Success)
-*/
-
-int main(void)
+nt main(void)
 {
 	int n;
 	int a[5];
