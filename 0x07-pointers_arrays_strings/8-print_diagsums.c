@@ -6,14 +6,16 @@
 *
 * @a: array
 *
-* @size: siz of the matrix
+* @size: size of the matrix
 *
 * Return: void
 */
 
 void print_diagsums(int *a, int size)
 {
-	int i, j, k = 0;
+	int i = 0;
+	int j = 0;
+	int k = 0;
 
 	while (i < size)
 	{
