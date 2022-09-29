@@ -36,7 +36,7 @@ int _strlen(char *s)
 {
 	if (*s == '\0')
 	{
-		return;
+		return (0);
 	}
 	else
 	{
