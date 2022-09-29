@@ -16,7 +16,7 @@ int prime(int n, int d)
 	{
 		return (0);
 	}
-	else if (n > d / 2)
+	else if (d > n / 2)
 	{
 		return (1);
 	}
