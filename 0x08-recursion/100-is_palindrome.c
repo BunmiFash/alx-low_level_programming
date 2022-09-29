@@ -25,6 +25,26 @@ int check_string(char *start, char *end)
 }
 
 /**
+* _strlen - returns length of string
+*
+* @s: String
+*
+* Return: length
+*/
+
+int _strlen(char *s)
+{
+	if (*s == '\0')
+	{
+		return;
+	}
+	else
+	{
+		return (1 + _strlen(s - 1));
+	}
+}
+
+/**
 * is_palindrome - checks for palindrome
 *
 * @s: Pointer to string
@@ -34,7 +54,7 @@ int check_string(char *start, char *end)
 
 int is_palindrome(char *s)
 {
-	int length = _strlen_recursion(s);
+	int length = _strlen(s);
 
 	return (check_string(s, (s + length - 1)));
 }
