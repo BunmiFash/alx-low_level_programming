@@ -40,7 +40,7 @@ int _strlen(char *s)
 	}
 	else
 	{
-		return (1 + _strlen(s - 1));
+		return (1 + _strlen(s + 1));
 	}
 }
 
