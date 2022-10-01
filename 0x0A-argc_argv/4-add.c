@@ -40,7 +40,7 @@ bool is_digit(char *argv)
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i = 1;
 	int sum;
 
 	if (argc < 2)
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 		printf("%d\n", 0);
 		return (0);
 	}
-	for (i = 1; i < argc; i++)
+	while (i < argc)
 	{
 		if (is_digit(argv[i]))
 		{
@@ -59,6 +59,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
+		i++;
 	}
 	printf("%d\n", sum);
 	return (0);
