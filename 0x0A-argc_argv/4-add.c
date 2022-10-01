@@ -1,5 +1,32 @@
 #include <stdlib.h>
+#include <stdbool.h>
 #include <stdio.h>
+
+/**
+* is_digit - checks if the argument passed to command line is a digit
+*
+* @argv: Array of strings of arguments
+*
+* Return: True if argument is a digit
+*/
+
+bool is_digit(char *argv)
+{
+	int j;
+
+	for (j = 0; argv[j]; j++)
+	{
+		if (!(argv[j] >= '0' && argv[j] <= '9'))
+		{
+			return (0);
+		}
+		else
+		{
+			return (1);
+		}
+	}
+	return (0);
+}
 
 /**
 * main - adds positive number
@@ -8,7 +35,7 @@
 *
 * @argv: Array of strings of arguments
 *
-* Return: Always 0
+* Return: Always 0 (Success)
 */
 
 int main(int argc, char *argv[])
@@ -24,14 +51,14 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) == 0)
+			if (is_digit(argv[i]))
 			{
-				printf("Error\n");
-				return (1);
+				sum += atoi(argv[i]);
 			}
 			else
 			{
-				sum += atoi(argv[i]);
+				printf("Error\n");
+				return (1);
 			}
 		}
 		printf("%d\n", sum);
