@@ -12,7 +12,7 @@
 
 bool is_digit(char *argv)
 {
-	int j;
+	int j = 0;
 
 	for (j = 0; argv[j]; j++)
 	{
@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	int i = 1;
 	int sum;
 
-	if (argc < 2)
+	if (argc == 1)
 	{
 		printf("%d\n", 0);
 		return (0);
