@@ -14,7 +14,7 @@
 
 int main(int argc, char *argv[])
 {
-	int n = atoi(argv[1]);
+	int n;
 	int cent = 0;
 
 	if (argc != 2)
@@ -22,6 +22,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
+	n = atoi(argv[1]);
+
 	if (n < 0)
 	{
 		printf("0\n");
