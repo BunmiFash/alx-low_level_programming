@@ -8,11 +8,12 @@
 
 int main(void)
 {
-	char *str;
+	char s1[98];
+	char *ptr;
 
-	str = "I am a girl";
-
-	_puts(str);
+	ptr = _strcpy(s1, "First, solve problems\n");
+	printf("%s", s1);
+	printf("%s", ptr);
 	return (0);
-
 }
+
