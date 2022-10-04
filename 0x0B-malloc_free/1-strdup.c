@@ -22,9 +22,9 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (*(str + i))
+	while (*(str + len) != '\0')
 	{
-		len++, i++;
+		len++;
 	}
 	len++;
 
@@ -40,8 +40,8 @@ char *_strdup(char *str)
 		{
 			*(ptr + i) = *(str + i);
 		}
+		*(ptr + i) = '\0';
 
 	}
-	*(ptr + i) = '\0';
 	return (ptr);
 }
