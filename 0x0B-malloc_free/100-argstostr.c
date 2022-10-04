@@ -40,7 +40,7 @@ char *argstostr(int ac, char **av)
 		{
 			res[num++] = av[i][j];
 		}
-		res[num++] = '\0';
+		res[num++] = '\n';
 	}
 	res[total] = '\0';
 	return (res);
