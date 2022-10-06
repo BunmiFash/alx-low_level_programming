@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i;
 	int arr;
-i	void *ptr;
+	char *ptr;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -31,8 +31,8 @@ i	void *ptr;
 
 	for (i = 0; i < arr; i++)
 	{
-		(ptr + i) = 0;
+		ptr[i] = 0;
 	}
-	return ((char *)ptr);
+	return ((void *)ptr);
 
 }
