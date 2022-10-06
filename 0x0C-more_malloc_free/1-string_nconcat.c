@@ -53,8 +53,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = _strlen(s2);
 	}
 	len_s1 = _strlen(s1);
-	len_s2 = _strlen(s2);
-	len_total = len_s1 + len_s2 + 1;
+	len_total = len_s1 + n + 1;
 
 	ptr = malloc(sizeof(*ptr) * len_total);
 
