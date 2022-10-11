@@ -57,7 +57,7 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t dog_new;
+	dog_t *dog_new;
 	char *name_copy;
 	char *owner_copy;
 
