@@ -3,11 +3,11 @@
 
 /**
  * read_textfile -  reads a text file and prints
-
+ *
  * @filename: pointer to the file to be read
-
+ *
  * @letters: number of letters to be read and printed
-
+ *
  * Return: the actual number of letters it could read and print
  */
 

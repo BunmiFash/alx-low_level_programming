@@ -6,11 +6,11 @@
 
 /**
  * main - create the copy bash script
-
+ *
  * @ac: argument count passed into it
-
+ *
  * @av: arguments as strings collection
-
+ *
  * Return: 0
  */
 

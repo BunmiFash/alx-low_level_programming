@@ -6,11 +6,11 @@ void check(int status, char type, int fd, char *name);
 
 /**
  * main - program that copies the content of a file to another file
-
+ *
  * @argc: number of argument
-
+ *
  * @argv: Array of charcters of arguments
-
+ *
  * Return: integer value
  */
 
@@ -53,13 +53,13 @@ int main(int argc, char *argv[])
 
 /**
  * check - check status
-
+ *
  * @status: status of the previously called function
-
+ *
  * @type: char to show if the prev function is read, write or close
-
+ *
  * @fd: file destination number
-
+ *
  * @name: name of the file to check
  */
 
