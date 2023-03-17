@@ -11,9 +11,8 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *ptr = head;
-	size_t list_size = dlistint_len(head);
-
-	if (index > list_size - 1)
+	
+	if (head == NULL)
 	{
 		return (NULL);
 	}
@@ -21,11 +20,14 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	{
 		return (head);
 	}
-
-	while (index > 0)
+	if (index > 0)
 	{
-		ptr = ptr->next;
-		index--;
+		while (index > 0)
+		{
+			ptr = ptr->next;
+			index--;
+		}
+		return (ptr);
 	}
-	return (ptr);
+	return (NULL);
 }
