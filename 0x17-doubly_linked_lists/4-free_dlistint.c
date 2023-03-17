@@ -10,7 +10,11 @@
 void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *ptr = head;
-
+	/*IF LIST IS EMPTY*/
+	if (!head)
+	{
+		return;
+	}
 	while (ptr->next != NULL)
 	{
 		ptr = ptr->next;
