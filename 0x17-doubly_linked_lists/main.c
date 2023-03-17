@@ -8,6 +8,7 @@
  *
  * Return: Always EXIT_SUCCESS.
  */
+
 int main(void)
 {
     dlistint_t *head;
@@ -22,5 +23,7 @@ int main(void)
     add_dnodeint_end(&head, 402);
     add_dnodeint_end(&head, 1024);
     print_dlistint(head);
+    free_dlistint(head);
+    head = NULL;
     return (EXIT_SUCCESS);
 }
