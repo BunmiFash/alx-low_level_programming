@@ -44,23 +44,23 @@ dlistint_t *newNode(dlistint_t *prev_node, int n)
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *prev_node; /*next_node;*/
-	size_t length = dlistint_len(*h);
+	/*size_t length = dlistint_len(*h);*/
 
 	prev_node = *h;
 
-	if (idx > (length - 1))
+/*	if (idx > (length - 1))
 	{
 		return (NULL);
-	}
+	}*/
 	if (idx == 0)
 	{
 		return (add_dnodeint(h, n));
 	}
 
-	if (idx == (length - 1))
+	/*if (idx == (length - 1))
 	{
 		return (add_dnodeint_end(h, n));
-	}
+	}*/
 
 	while (idx > 1)
 	{
