@@ -1,3 +1,2 @@
-makeschool: school.c m.h main.c
-all:
-	gcc -o makeschool school.c m.h main.c
+all: school.c m.h main.c
+	gcc -o all school.c m.h main.c
