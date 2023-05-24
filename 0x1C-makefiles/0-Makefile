@@ -1,0 +1,3 @@
+makeschool: school.c m.h main.c
+all:
+	gcc -o makeschool school.c m.h main.c
