@@ -1,0 +1,6 @@
+CC=gcc
+SRC::=main.c school.c
+all:
+	for i in $(SRC)
+	do $(CC) i -o school
+	done;
