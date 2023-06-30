@@ -29,7 +29,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newNode->key = key_copy;
 	newNode->value = val;
 	newNode->next = NULL;
-	/*IF KEY ALREADY EXIST, UPDATE VALUE*/
+	/*IF KEY ALREADY EXIST, UPDATE VALUE llk*/
 	for (int i = idx; ht->array[i]; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
