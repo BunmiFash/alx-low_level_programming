@@ -1,3 +1,5 @@
+#include "hash_tables.h"
+#include <stdlib.h>
 /**
  *hash_table_set - A function that adds an element to the hash table
  *@ht: Hahsh table to add or update key
@@ -8,7 +10,7 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int idx;
+	unsigned long int idx, i;
 	hash_node_t *newNode;
 	char *val;
 	char *key_copy;
@@ -26,7 +28,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newNode->value = val;
 	newNode->next = NULL;
 	/*IF KEY ALREADY EXIST, UPDATE VALUE llk*/
-	for (int i = idx; ht->array[i]; i++)
+	for (i = idx; ht->array[i]; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
 		{
