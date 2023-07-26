@@ -12,18 +12,21 @@ def island_perimeter(grid):
     length = 0
     width = 0
     number = 0
+    gridlen = len(grid)
     for row in grid:
-        for num in range(len(row)):
-            if row[num] == 0:
-                continue
-            elif row[num] == 1:
-                number += 1
-        if number > width:
-            width = number
-        if number > 0:
-            length += 1
-        number = 0
-    print(length, width)
+        if (len(row) > gridlen or len(row) <= 100 or gridlen <= 100):
+            for num in range(len(row)):
+                if row[num] == 0:
+                    continue
+                elif row[num] == 1:
+                    number += 1
+            if number > width:
+                width = number
+            if number > 0:
+                length += 1
+            number = 0
+        else:
+            break
     total = length + width
     perimeter = 2 * total
     return perimeter
